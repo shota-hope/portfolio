@@ -10,7 +10,7 @@ export function Header() {
     <>
       <header className="flex my-5">
         <section className="">
-          <div className="flex md:hidden md:justify-start">
+          <div className="flex md:hidden">
             <Burger
               opened={opened}
               onClick={() => setOpened((o) => !o)}
@@ -18,8 +18,9 @@ export function Header() {
             />
           </div>
         </section>
+        
         <section className="flex text-2xl font-bold">
-          <div className="flex text-black md:justify-center lg:justify-start">
+          <div className="flex text-black md:justify-center lg:justify-start text-center">
             <Link href="/">
               <a className="no-underline">Shimabu IT University</a>
             </Link>
